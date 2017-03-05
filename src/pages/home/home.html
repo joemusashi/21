@@ -1,0 +1,154 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title class="logo">21</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+
+  <div class="hero">
+    <img src="assets/img/photos/kids1.jpg" />
+    <h1 class="hero-title">
+      Apprendre &agrave; coder<br />
+      pour apprendre &agrave;<br />
+      <span class="typer">
+        <typewriter [contents]="hobbies" [erasable]="true" [cursor]="''" [speed]="100" [afterEnd]="2000"></typewriter><span class="type-cursor">|</span>
+      </span>
+    </h1>
+    <button class="subscribe" ion-button [navPush]="register">Inscrire mon enfant</button>
+  </div>
+
+  <ion-card>
+    <ion-card-header>
+      <h1>La philosophie</h1>
+      <hr />
+    </ion-card-header>
+    <ion-card-content>
+      <ion-slides autoplay="7500" loop="true">
+
+        <ion-slide>
+          <p>
+            &laquo;&nbsp;Notre politique chez Facebook est d&apos;embaucher
+            autant d&apos;ing&eacute;nieurs talentueux que possible. Il n&apos;y
+            a pas assez de gens form&eacute;s à ces comp&eacute;tences
+            aujourd&apos;hui.&nbsp;&raquo;<br />
+          </p>
+          <h4>Mark Zuckerberg, Cofondateur de Facebook</h4>
+        </ion-slide>
+
+        <ion-slide>
+          <p>
+            &laquo;&nbsp;Apprendre &agrave; &eacute;crire des programmes
+            &eacute;tire votre esprit, vous aide &agrave; penser mieux, et
+            cr&eacute;e une fa&ccedil;on de réfléchir &agrave; aux choses que
+            je pense utile dans tous les domaines.&nbsp;&raquo;<br />
+          </p>
+          <h4>Bill Gates, Cofondateur de Microsoft</h4>
+        </ion-slide>
+
+        <ion-slide>
+          <p>
+            &laquo;&nbsp;Apprendre &agrave; coder sera un &eacute;norme stimulant pour votre
+            avenir, quel que soit vos plans de carri&egrave;res. L&apos;apprentissage du
+            code vous rendra &eacute;galement extr&ecirc;mement cool&nbsp;!&nbsp;&raquo;<br />
+          </p>
+          <h4>Max Levchin, Cofondateur de PayPal</h4>
+        </ion-slide>
+
+        <ion-slide>
+          <p>
+            &laquo;&nbsp;Si vous pouvez programmer un ordinateur, vous pouvez
+            r&eacute;aliser vos r&ecirc;ves. Mais nous ne l&apos;enseignons que
+            dans une petite poign&eacute;e d&apos;&eacute;coles, pourquoi&nbsp;?&nbsp;&raquo;<br />
+          </p>
+          <h4>Dick Costolo, PDG de Twitter</h4>
+        </ion-slide>
+
+      </ion-slides>
+      <button class="more-details" ion-button clear [navPush]="philosophy">Plus de détails</button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="clickable-item" [navPush]="privateLesson">
+    <img src="assets/img/photos/kid3.jpg" />
+    <h1 class="card-title">Cours particulier</h1>
+    <h2 class="card-subtitle">&agrave; domicile</h2>
+    <span class="card-more-details">Plus de détails</span>
+  </ion-card>
+
+  <ion-card class="clickable-item"[navPush]="collectiveLesson">
+    <img src="assets/img/photos/kids2.jpg" />
+    <h1 class="card-title">Cours collectif</h1>
+    <h2 class="card-subtitle">dans l&apos;une de nos bases</h2>
+    <span class="card-more-details">Plus de détails</span>
+  </ion-card>
+
+  <ion-card class="clickable-item"[navPush]="birthday">
+    <img src="assets/img/photos/kids12.jpg" />
+    <h1 class="card-title">Anniversaire</h1>
+    <h2 class="card-subtitle">o&ugrave; vous voulez</h2>
+    <span class="card-more-details">Plus de détails</span>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <h1>Une pédagogie innovante</h1>
+      <hr />
+    </ion-card-header>
+    <ion-card-content>
+      <img src="assets/img/icons/innovation.png" />
+      <p>
+        Un parcours libre pour l'enfant qui avance à son ryhtme et suivant ses
+        envies, dans une collection de projets couvrant de multiples compétences.
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <h1>Une progression amusante</h1>
+      <hr />
+    </ion-card-header>
+    <ion-card-content>
+      <img src="assets/img/icons/medal.png" />
+      <p>
+        Un système amusant de points et de récompenses qui encourage votre
+        enfant dans sa progression vers des projets toujours plus complexes.
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <h1>Les meilleurs professeurs</h1>
+      <hr />
+    </ion-card-header>
+    <ion-card-content>
+      <img src="assets/img/icons/teacher.png" />
+      <p>
+        Nous recutons nos professeurs suivant un processus exigeant, nous
+        les formons à notre pédagogie innovante et nous les évaluons en
+        en permanence d'après vos commentaires.
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <h1>Un matériel dernier cri</h1>
+      <hr />
+    </ion-card-header>
+    <ion-card-content>
+      <img src="assets/img/icons/robot.png" />
+      <p>
+        Tous nos professeurs sont équipés du matériel pédagogique nécessaire
+        pour que votre enfant aprenne la programmation dans les meilleurs
+        conditions (robots, cartes d'activités débranchées, etc.).
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

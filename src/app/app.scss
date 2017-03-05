@@ -14,3 +14,31 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+@font-face {
+    font-family: 'Dynasty';
+    font-weight: normal;
+    font-style: normal;
+    src: url("../assets/fonts/Dynasty.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-weight: normal;
+    font-style: normal;
+    src: url("../assets/fonts/Raleway-Regular.ttf") format('truetype');
+}
+
+.logo {
+  font-family: 'Dynasty';
+
+  div.toolbar-title {
+    font-size: 3rem;
+    font-weight: normal;
+  }
+
+}
+
+.clickable-item {
+  cursor: pointer;
+}

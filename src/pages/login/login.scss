@@ -1,0 +1,79 @@
+page-login {
+
+  ion-header {
+
+    ion-navbar {
+
+      .toolbar-background {
+        background: transparent;
+        border-color: transparent !important;
+      }
+
+    }
+
+  }
+
+  .login-content {
+    background: map-get($colors, light);
+
+    ion-row {
+      align-items: center;
+      text-align: center;
+    }
+
+    .logo {
+      font-size: 10rem !important;
+    }
+
+    .login-box {
+      background: #fff;
+      border: 1px solid map-get($colors, secondary);
+      margin: 50px 0;
+      padding: 0 10px;
+
+      .inputs-col {
+        padding: 0;
+
+        ion-list {
+          border-radius: 0px !important;
+          margin-bottom: 0;
+
+          ion-item {
+            border: 1px solid map-get($colors, secondary) !important;
+            font-size: 1em;
+            margin-bottom: 15px;
+
+            input {
+              border: none;
+            }
+
+          }
+
+        }
+
+      }
+
+      .actions-col {
+        margin: 0px 15px;
+        padding: 0;
+
+        .submit-btn {
+          background: map-get($colors, primary) ;
+        }
+
+        p {
+          margin: 10px 0 0;
+        }
+
+        .register-btn {
+          color: map-get($colors, primary);
+          font-size: 0.9em;
+        }
+
+      }
+
+    }
+
+  }
+
+}
